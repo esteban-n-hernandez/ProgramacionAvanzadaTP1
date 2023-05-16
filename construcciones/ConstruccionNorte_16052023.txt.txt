@@ -1,0 +1,2 @@
+Superficie: 550.0, Precio: 45000.0, Dirección: Cesar, Unidades: 3, Pisos: 4
+Superficie: 500.0, Precio: 50000.0, Dirección: General, Ambientes: 5, Orientacion: NORTE
