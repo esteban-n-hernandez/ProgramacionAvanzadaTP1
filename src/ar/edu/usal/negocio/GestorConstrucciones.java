@@ -97,8 +97,7 @@ public class GestorConstrucciones {
                                 double precioConIVA = precio * 1.21; // Sumar el 21% al precio
 
                                 // Imprimir la información de la construcción con el precio actualizado
-                                System.out.println("Superficie: " + fields[0].split(": ")[1] +
-                                        ", Precio (sin IVA): " + precio +
+                                System.out.println(", Precio (sin IVA): " + precio +
                                         ", Precio (con IVA): " + precioConIVA +
                                         ", Dirección: " + fields[2].split(": ")[1]);
                             }
@@ -122,7 +121,7 @@ public class GestorConstrucciones {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresar el nombre del archivo.");
-        String fileName = scanner.next() + "_" + DateUtils.formatFecha() + ".txt";
+        String fileName = scanner.next() + "_" + DateUtils.formatFecha();
 
         try (FileWriter writer = new FileWriter("construcciones/" + fileName + ".txt")) {
             // Escribe cada objeto de la lista en una línea del archivo
